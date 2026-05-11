@@ -8,34 +8,38 @@
     font-optical-sizing: auto;
 }
 
-.nav-content{
+.nav-content {
     display: flex;
+    max-width: 1600px;
     align-items: center;
     padding: 20px 0;
     justify-content: space-around;
-    /* background-color: aqua; */
+     /* background-color: aqua;  */
 }
-.nav-content img{
-     max-width: 139px;
+
+.nav-content img {
+    max-width: 139px;
 }
-.nav-content .menu{
+
+.nav-content .menu {
     display: flex;
     gap: 32px;
     max-width: 365px;
 }
 
-.nav-content .menu li{
+.nav-content .menu li {
     list-style: none;
     display: flex;
 }
-.nav-content .menu li a{
+
+.nav-content .menu li a {
     text-decoration: none;
     color: #000000;
     font-size: 16px;
     font-weight: 500;
 }
 
-.btn{
+.btn {
     background-color: #30B868;
     color: white;
     border: none;
@@ -44,9 +48,72 @@
     cursor: pointer;
 }
 
-#banner{
-    max-width: 1528px;
-    margin: 0;
-    background-image: url('assets/hero-bg.png');
-    background-size: cover;
+/* Banner */
+#banner {
+    max-width: 1600px;
+    /* background-color: red;  */
+     background-image: url('../assets/hero-bg.png');
+     background-size: cover;
+     background-position: center;
+}
+
+.banner-content {
+    max-width: 1360px;
+    padding:116px 120px 180px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-btn {
+    background-color: #FFFFFF;
+        color: #30B868;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 1000px;
+        align-items: center;
+        padding: 8px 12px 8px 6px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.banner-btn:hover {
+    background-color: #30B868;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.banner-btn img{
+    width: 16px;
+    height: 16px;
+    margin: 0px 10px;
+}
+
+.banner-title-1 {
+    font-size: 72px;
+    font-weight: bold;
+    color: white;
+    margin-top: 16px;
+}
+
+.banner-title-2 {
+    font-size: 72px;
+    font-weight: bold;
+    color: #30B868;
+    padding:0;
+}
+
+.banner-para{
+    font-size: 18px;
+    color: white;
+    margin-top: 16px;
+}
+
+.btn-align{
+    display: flex;
+    margin-top: 32px;
+    gap: 16px;
+    max-width: 465px;
+
 }
